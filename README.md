@@ -20,10 +20,10 @@ The Pass-the-Pigs application follows the same scoring principles as the traditi
 
 #### Single pig
   -   The pig is lying on its side - 0 Points
-  -   Razorback - The pig is lying on its back - 5 Points
-  -   Trotter - The pig is standing upright - 5 Points
-  -   Snouter - The pig is leaning on its snout - 10 Points
-  -   Leaning Jowler - The pig is resting on its snout and ear - 15 Points
+  -   _Razorback_ - The pig is lying on its back - 5 Points
+  -   _Trotter_ - The pig is standing upright - 5 Points
+  -   _Snouter_ - The pig is leaning on its snout - 10 Points
+  -   _Leaning Jowler_ - The pig is resting on its snout and ear - 15 Points
   
 #### Both pigs
   -   _Sider_ - The pigs are on their sides, either both with the spot facing upward or both with the spot facing downward - 1 Point
@@ -38,64 +38,30 @@ The Pass-the-Pigs application follows the same scoring principles as the traditi
   
   ### Code Implementation:
   
-  
-  
+  Pigs are rolled by means of a .roll function which generates two random numbers between one and five, representing   the five different ways each of the two pigs can land. The point values are then calculated by means of a series    of if/else statements that check for the relevant pig landing position, as well as any of the multi-pig "combos"    outlined above. After each player rolls, the buttons and information for the next player's turn are automatically displayed, and vis versa. The first player to reach 100 points wins, which is verified within an if/else statement included in the roll method.
 
-## Links
+## Front-End Design:
 
-  - Heroku: www.samplelinkhere.com
-  - GitHub: www.samplelinkhere.com
+Beyond the basic game, the pass-the-pig application is also designed with a level of user-customization in mind. Before each 'bout', each of the two players are prompted to select their "team" of two pigs out of four available. Their chosen pig players are then displayed above the game board during the rounds.
 
-## Installation
+## Additional Information and Resources
 
-#### Gems
-
-Pass-the-Pig uses the following gems:
-
-  - Capybara
-  - Sinatra
-  - RSpec
-  - Pry
-  - ActiveRecord
-  - etcetera
-  - etcetera
-
-To install, run `$ gem install bundle` in the command line. Or whatever else you have to do. 
-
-#### Databases
-
-Additionally, Pass-the-Pig utilizes databases via ActiveRecord. Should you clone this repository, simply do the following to establish and prepare similar databases for your own use:
-
-1. Launch the Postgres server by running `$ postgres` in the terminal.
-2. Navigate to the project folder and run `$ rake db:create`.
-3. Run `$ rake db:migrate` to migrate the changes detailed in db into the database.
-
-## Tests
-
-Both method and integration tests for Pass-the-Pig utilize the RSpec. Simply run `$ gem install rspec`, if it's not already installed, and then the command `rspec`, while located in the project's file.
+  - [Pass-the-Pigs strategy and probability](http://www.derepas.com/petco/)
+  - [Video of traditional Pass-the-Pigs gameplay](https://www.youtube.com/watch?v=eFWvxGbdjI8)
+  - [Terrible Pass-the-Pigs commercial from the '90s](https://www.youtube.com/watch?v=blP4Dv01ZKM)
+  - [In-depth analysis of Pass-the-Pigs (no, seriously...)](http://pubsonline.informs.org/doi/pdf/10.1287/ited.1120.0088)
 
 ## Contribute
 
-  - Issue Tracker: https://github.com/courtneymaepdx/PROJECTNAME/issues
-  - Source Code: https://github.com/courtneymaepdx/PROJECTNAME
-  - Pull Requests: https://github.com/courtneymaepdx/PROJECTNAME/pulls
+  - Issue Tracker: https://github.com/courtneymaepdx/pass-the-pig/issues
+  - Source Code: https://github.com/courtneymaepdx/pass-the-pig
+  - Pull Requests: https://github.com/courtneymaepdx/pass-the-pig/pulls
   
-## Development Roadmap
-
-Pass-the-Pig is still a work in progress. The following are features, fixes and tweaks to be implemented as the project develops. Any additional suggestions can be contributed via the Issue Tracker above.
-
-  - Blah
-  -
-
-## Contact
-
-Questions, grievances and hellos can be directed to Courtney at <courtney.mae.phillips@gmail.com>.
-
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Courtney Phillips
+Copyright (c) 2015 Erin Collins, Courtney Phillips
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
