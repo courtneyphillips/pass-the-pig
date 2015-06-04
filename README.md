@@ -36,9 +36,11 @@ The Pass-the-Pigs application follows the same scoring principles as the traditi
   -   _Makin' Bacon (or Oinker)_ - If both pigs are touching in any position,[3] then the total score is reset to 0 and the turn changes to the next player
   -   _Piggyback_ - If one pig lands completely resting on top of the other, then the player is out of the game.
   
-  ### Code Implementation:
+### Code Implementation:
   
-  Pigs are rolled by means of a .roll function which generates two random numbers between one and five, representing   the five different ways each of the two pigs can land. The point values are then calculated by means of a series    of if/else statements that check for the relevant pig landing position, as well as any of the multi-pig "combos"    outlined above. After each player rolls, the buttons and information for the next player's turn are automatically displayed, and vis versa. The first player to reach 100 points wins, which is verified within an if/else statement included in the roll method.
+Pigs are rolled by means of a .roll function which generates two random numbers between one and five, representing the five different ways each of the two pigs can land. The point values are then calculated by means of a series    of if/else statements that check for the relevant pig landing position, as well as any of the multi-pig "combos"    outlined above. After each player rolls, the buttons and information for the next player's turn are automatically displayed, and vis versa. The first player to reach 100 points wins, which is verified within an if/else statement included in the roll method.
+
+In the actual game of Pass-the-Pigs, the small pig toys also have a single dot on one of their sides, thus creating more possible combinations of rolls. The "dot side" is not yet implemented in our code, but we plan to add it. 
 
 ## Front-End Design:
 
