@@ -52,6 +52,7 @@ Beyond the basic game, the pass-the-pig application is also designed with a leve
   - [Video of traditional Pass-the-Pigs gameplay](https://www.youtube.com/watch?v=eFWvxGbdjI8)
   - [Terrible Pass-the-Pigs commercial from the '90s](https://www.youtube.com/watch?v=blP4Dv01ZKM)
   - [In-depth analysis of Pass-the-Pigs (no, seriously...)](http://pubsonline.informs.org/doi/pdf/10.1287/ited.1120.0088)
+  - [Cute pig videos](https://www.youtube.com/watch?v=U_4XWcDSR8w)
 
 ## Contribute
 
